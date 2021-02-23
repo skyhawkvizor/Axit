@@ -34,7 +34,7 @@
 
 	<header class="full-width container header">
 		<div class="header__body padding padding_right-left">
-			<div class="header__column logo">
+			<div class="header__column_logo logo">
 				<a href="#" class="logo__link" title="logo">
 					<picture class="logo__img">
 						<source class="lazyload"
@@ -112,9 +112,9 @@
 							accumsan et viverra justo commodo.
 						</p>
 						<button name="download" class="title__button button">
-		
-							Download
-		
+							<span class="button__text">
+								Download
+							</span>
 						</button>
 					</div>
 		
@@ -176,58 +176,74 @@
 						Aenean euismod bibendum laoreet.
 					</p>
 				</div>
-				<div class="links-section__column links-section__column_links links-scroll" id="links-scroll">
-					<ul class="links links_slider">
-						<li class="links__item links__item_slider">
-							<a href="#" class="links__link" title="facebook">
-								<svg class="links__svg">
-									<use xlink:href="assets/images/icons/facebook.svg#facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="links__item  links__item_slider">
-							<a href="#" class="links__link" title="twitter">
-								<svg class="links__svg">
-									<use xlink:href="assets/images/icons/twitter.svg#twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="links__item  links__item_slider">
-							<a href="#" class="links__link" title="g+">
-								<svg class="links__svg">
-									<use xlink:href="assets/images/icons/g+.svg#g+"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="links__item  links__item_slider">
-							<a href="#" class="links__link" title="pinterest">
-								<svg class="links__svg">
-									<use xlink:href="assets/images/icons/pinterest.svg#pinterest"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="links__item  links__item_slider">
-							<a href="#" class="links__link" title="instagram">
-								<svg class="links__svg">
-									<use xlink:href="assets/images/icons/instagram.svg#instagram"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="links__item  links__item_slider">
-							<a href="#" class="links__link" title="youtube">
-								<svg class="links__svg">
-									<use xlink:href="assets/images/icons/youtube.svg#youtube"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="links__item  links__item_slider">
-							<a href="#" class="links__link" title="wifi">
-								<svg class="links__svg">
-									<use xlink:href="assets/images/icons/wifi.svg#wifi"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
+				<div class="links-section__column links-section__column_right scroll scroll_links">
+					<div class="scroll__inner">
+						<div class="scroll__content">
+							<ul class="links links_slider">
+								<li class="links__item links__item_slider">
+									<a href="#" class="links__link" title="facebook">
+										<svg class="links__svg">
+											<use xlink:href="assets/images/icons/facebook.svg#facebook"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="links__item  links__item_slider">
+									<a href="#" class="links__link" title="twitter">
+										<svg class="links__svg">
+											<use xlink:href="assets/images/icons/twitter.svg#twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="links__item  links__item_slider">
+									<a href="#" class="links__link" title="g+">
+										<svg class="links__svg">
+											<use xlink:href="assets/images/icons/g+.svg#g+"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="links__item  links__item_slider">
+									<a href="#" class="links__link" title="pinterest">
+										<svg class="links__svg">
+											<use xlink:href="assets/images/icons/pinterest.svg#pinterest"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="links__item  links__item_slider">
+									<a href="#" class="links__link" title="instagram">
+										<svg class="links__svg">
+											<use xlink:href="assets/images/icons/instagram.svg#instagram"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="links__item  links__item_slider">
+									<a href="#" class="links__link" title="youtube">
+										<svg class="links__svg">
+											<use xlink:href="assets/images/icons/youtube.svg#youtube"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="links__item  links__item_slider">
+									<a href="#" class="links__link" title="wifi">
+										<svg class="links__svg">
+											<use xlink:href="assets/images/icons/wifi.svg#wifi"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+		
+		
+					<div class="scroll__cover scroll__cover_left"></div>
+					<div class="scroll__cover scroll__cover_right"></div>
+					<div class="scroll__arrows">
+						<svg class="scroll__arrow scroll__arrow_left">
+							<use xlink:href="assets/images/icons/thin-arrow.svg#thin-arrow"></use>
+						</svg>
+						<svg class="scroll__arrow scroll__arrow_right">
+							<use xlink:href="assets/images/icons/thin-arrow.svg#thin-arrow"></use>
+						</svg>
+					</div>
 				</div>
 		
 		
@@ -669,7 +685,9 @@
 					</div>
 				</div>
 				<button name="download" class="design-section__button button">
-					Download
+					<span class="button__text">
+						Download
+					</span>
 				</button>
 			</div>
 		</section>		<section class="contact-section padding container">
@@ -700,15 +718,7 @@
 				</label>
 				<button type="submit" class="form-bottom__submit">Send Message</button>
 			</form>
-		</section>		<div class="flex">
-			<div class="line">
-				<div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque repellendus deleniti quod
-					sint placeat voluptat.</div>
-				<!-- <div class="item">B</div>
-				<div class="item">C</div> -->
-			</div>
-		</div>
-
+		</section>
 	</main>
 
 	<footer class="footer container padding full-width">
@@ -766,8 +776,7 @@
 		<small class="footer__small">
 			© 2020 Axure Themes
 		</small>
-	</footer>	<!-- <script defer src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
-	<script defer src="assets/js/app.js"></script>
+	</footer>	<script defer src="assets/js/app.js"></script>
 </body>
 
 </html>
