@@ -181,49 +181,49 @@
 						<div class="scroll__content">
 							<ul class="links links_slider">
 								<li class="links__item links__item_slider">
-									<a href="#" class="links__link" title="facebook">
+									<a href="#" class="links__link no-touch-select" title="facebook">
 										<svg class="links__svg">
 											<use xlink:href="assets/images/icons/facebook.svg#facebook"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="links__item  links__item_slider">
-									<a href="#" class="links__link" title="twitter">
+									<a href="#" class="links__link no-touch-select" title="twitter">
 										<svg class="links__svg">
 											<use xlink:href="assets/images/icons/twitter.svg#twitter"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="links__item  links__item_slider">
-									<a href="#" class="links__link" title="g+">
+									<a href="#" class="links__link no-touch-select" title="g+">
 										<svg class="links__svg">
 											<use xlink:href="assets/images/icons/g+.svg#g+"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="links__item  links__item_slider">
-									<a href="#" class="links__link" title="pinterest">
+									<a href="#" class="links__link no-touch-select" title="pinterest">
 										<svg class="links__svg">
 											<use xlink:href="assets/images/icons/pinterest.svg#pinterest"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="links__item  links__item_slider">
-									<a href="#" class="links__link" title="instagram">
+									<a href="#" class="links__link no-touch-select" title="instagram">
 										<svg class="links__svg">
 											<use xlink:href="assets/images/icons/instagram.svg#instagram"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="links__item  links__item_slider">
-									<a href="#" class="links__link" title="youtube">
+									<a href="#" class="links__link no-touch-select" title="youtube">
 										<svg class="links__svg">
 											<use xlink:href="assets/images/icons/youtube.svg#youtube"></use>
 										</svg>
 									</a>
 								</li>
 								<li class="links__item  links__item_slider">
-									<a href="#" class="links__link" title="wifi">
+									<a href="#" class="links__link no-touch-select" title="wifi">
 										<svg class="links__svg">
 											<use xlink:href="assets/images/icons/wifi.svg#wifi"></use>
 										</svg>
@@ -234,16 +234,16 @@
 					</div>
 		
 		
-					<div class="scroll__cover scroll__cover_left"></div>
-					<div class="scroll__cover scroll__cover_right"></div>
-					<div class="scroll__arrows">
+					<div class="scroll__cover scroll__cover_left scroll__cover_white"></div>
+					<div class="scroll__cover scroll__cover_right scroll__cover_white"></div>
+					<!-- <div class="scroll__arrows">
 						<svg class="scroll__arrow scroll__arrow_left">
 							<use xlink:href="assets/images/icons/thin-arrow.svg#thin-arrow"></use>
 						</svg>
 						<svg class="scroll__arrow scroll__arrow_right">
 							<use xlink:href="assets/images/icons/thin-arrow.svg#thin-arrow"></use>
 						</svg>
-					</div>
+					</div> -->
 				</div>
 		
 		
@@ -722,57 +722,66 @@
 	</main>
 
 	<footer class="footer container padding full-width">
-		<ul class="footer__links links links_footer">
-			<li class="links__item links__item_footer">
-				<a href="#" class="links__link links__link_footer" title="facebook">
-					<svg class="links__svg links__svg_footer">
-						<use xlink:href="assets/images/icons/facebook.svg#facebook"></use>
-					</svg>
-				</a>
-			</li>
-			<li class="links__item links__item_footer">
-				<a href="#" class="links__link links__link_footer" title="twitter">
-					<svg class="links__svg links__svg_footer">
-						<use xlink:href="assets/images/icons/twitter.svg#twitter"></use>
-					</svg>
-				</a>
-			</li>
-			<li class="links__item links__item_footer">
-				<a href="#" class="links__link links__link_footer" title="g+">
-					<svg class="links__svg links__svg_footer">
-						<use xlink:href="assets/images/icons/g+.svg#g+"></use>
-					</svg>
-				</a>
-			</li>
-			<li class="links__item links__item_footer">
-				<a href="#" class="links__link links__link_footer" title="pinterest">
-					<svg class="links__svg links__svg_footer">
-						<use xlink:href="assets/images/icons/pinterest.svg#pinterest"></use>
-					</svg>
-				</a>
-			</li>
-			<li class="links__item links__item_footer">
-				<a href="#" class="links__link links__link_footer" title="instagram">
-					<svg class="links__svg links__svg_footer">
-						<use xlink:href="assets/images/icons/instagram.svg#instagram"></use>
-					</svg>
-				</a>
-			</li>
-			<li class="links__item links__item_footer">
-				<a href="#" class="links__link links__link_footer" title="youtube">
-					<svg class="links__svg links__svg_footer">
-						<use xlink:href="assets/images/icons/youtube.svg#youtube"></use>
-					</svg>
-				</a>
-			</li>
-			<li class="links__item links__item_footer">
-				<a href="#" class="links__link links__link_footer" title="wifi">
-					<svg class="links__svg links__svg_footer">
-						<use xlink:href="assets/images/icons/wifi.svg#wifi"></use>
-					</svg>
-				</a>
-			</li>
-		</ul>
+		<div class="footer__links scroll scroll_links">
+			<div class="scroll__inner">
+				<div class="scroll__content">
+					<ul class="links links_footer">
+						<li class="links__item links__item_footer">
+							<a href="#" class="links__link links__link_footer" title="facebook">
+								<svg class="links__svg links__svg_footer">
+									<use xlink:href="assets/images/icons/facebook.svg#facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="links__item links__item_footer">
+							<a href="#" class="links__link links__link_footer" title="twitter">
+								<svg class="links__svg links__svg_footer">
+									<use xlink:href="assets/images/icons/twitter.svg#twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="links__item links__item_footer">
+							<a href="#" class="links__link links__link_footer" title="g+">
+								<svg class="links__svg links__svg_footer">
+									<use xlink:href="assets/images/icons/g+.svg#g+"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="links__item links__item_footer">
+							<a href="#" class="links__link links__link_footer" title="pinterest">
+								<svg class="links__svg links__svg_footer">
+									<use xlink:href="assets/images/icons/pinterest.svg#pinterest"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="links__item links__item_footer">
+							<a href="#" class="links__link links__link_footer" title="instagram">
+								<svg class="links__svg links__svg_footer">
+									<use xlink:href="assets/images/icons/instagram.svg#instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="links__item links__item_footer">
+							<a href="#" class="links__link links__link_footer" title="youtube">
+								<svg class="links__svg links__svg_footer">
+									<use xlink:href="assets/images/icons/youtube.svg#youtube"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="links__item links__item_footer">
+							<a href="#" class="links__link links__link_footer" title="wifi">
+								<svg class="links__svg links__svg_footer">
+									<use xlink:href="assets/images/icons/wifi.svg#wifi"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="scroll__cover scroll__cover_footer scroll__cover_left scroll__cover_black"></div>
+			<div class="scroll__cover scroll__cover_footer scroll__cover_right scroll__cover_black"></div>
+		</div>
+	
 		<small class="footer__small">
 			© 2020 Axure Themes
 		</small>
