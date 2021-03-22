@@ -5418,9 +5418,8 @@ html.scrollFixed {
     text-overflow: hidden;
     text-transform: uppercase;
     transition: background-color 0.3s; }
-    .intro-section__openner:active {
-      -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-      -webkit-tap-highlight-color: transparent; }
+    .intro-section__openner span {
+      display: block; }
 
 .title {
   margin: 0px 6em 0px 0px;

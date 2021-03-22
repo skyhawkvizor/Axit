@@ -6826,6 +6826,11 @@ padding-bottom: 9em;
 
 .header {
     background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 .header__body {
@@ -6847,6 +6852,22 @@ padding-bottom: 9em;
     align-self: flex-start;
 }
 
+.header__progress-bar {
+    width: 0%;
+    height: 4px;
+    background-color: #ff8b38;
+    border-radius: 2px;
+    box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: width 0.3s;
+}
+
+.menuOpen .header__progress-bar {
+    display: none;
+}
+
 .logo {
     padding: 0.5em 0em;
     max-width: 7.9em;
@@ -6865,7 +6886,8 @@ padding-bottom: 9em;
 
 @media (max-width: 600px) {
     .nav {
-        display: none;
+        margin: 0px 0px 0px 0px;
+        overflow: auto;
     }
 }
 
@@ -6878,6 +6900,22 @@ padding-bottom: 9em;
     flex-wrap: wrap;
 }
 
+@media (max-width: 600px) {
+    .nav__list {
+        margin: 0px 0px 0px 0px;
+        display: none;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .menuOpen .nav__list {
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
 .nav__item {
     padding: 0.5em 1.5em;
     color: #ffffff;
@@ -6886,6 +6924,12 @@ padding-bottom: 9em;
 
 .nav__item.hover, .nav__item:active {
     color: #b3b3b3;
+}
+
+@media (max-width: 600px) {
+    .nav__item {
+        padding: 2.5em 1.5em;
+    }
 }
 
 .nav__link {
@@ -8269,7 +8313,7 @@ padding-bottom: 9em;
     background-color: #ff6d05;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 800px) {
     .pricing-card__button {
         height: 2.86em;
     }
@@ -8428,7 +8472,6 @@ padding-bottom: 9em;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
 }
 
 .design-section__bg img,
@@ -8448,6 +8491,8 @@ padding-bottom: 9em;
     flex-flow: column;
     -ms-flex-align: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .design-section__header {
@@ -8697,17 +8742,17 @@ img.lazyloaded {
     width: 40px;
     height: 40px;
     display: none;
-    background-color: rgba(255, 0, 54, 0.5);
+    background-color: rgba(202, 100, 29, 0.5);
     border: none;
     border-radius: 5px;
     color: white;
     position: fixed;
     bottom: 50px;
     right: 50px;
-    z-index: 100;
+    z-index: 10000;
     transition: background-color 0.3s;
 }
 
 .scrollBtn.hover, .scrollBtn:active {
-    background-color: #ff0036;
+    background-color: #ff8b38;
 }
