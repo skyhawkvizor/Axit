@@ -5229,7 +5229,7 @@ html.scrollFixed {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2; }
+    z-index: 999; }
 
 .padding {
   padding-top: 9em;
@@ -5305,11 +5305,17 @@ html.scrollFixed {
 
 .nav {
   margin: 0px 0px 0px 30px;
+  background-color: #000000;
   font-family: "OpenSansSemibold", sans-serif; }
   @media (max-width: 600px) {
     .nav {
       margin: 0px 0px 0px 0px;
-      overflow: auto; } }
+      overflow: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      z-index: -1; } }
   .nav__list {
     margin: -0.5em -1.5em;
     height: 100%;
@@ -5322,7 +5328,9 @@ html.scrollFixed {
         flex-flow: column;
         align-items: center; }
         .menuOpen .nav__list {
-          display: flex; } }
+          display: flex;
+          overflow-y: auto;
+          scrollbar-width: thin; } }
   .nav__item {
     padding: 0.5em 1.5em;
     color: #ffffff;
@@ -6438,7 +6446,12 @@ img.lazyloaded {
   position: fixed;
   bottom: 50px;
   right: 50px;
-  z-index: 10000;
+  z-index: 998;
   transition: background-color 0.3s; }
   .scrollBtn.hover, .scrollBtn:active {
     background-color: #ff8b38; }
+
+#test {
+  width: 20%;
+  color: white;
+  line-height: 1.3; }
