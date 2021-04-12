@@ -6444,7 +6444,7 @@ img.lazyloaded {
   border-radius: 5px;
   color: white;
   position: fixed;
-  bottom: 50px;
+  bottom: 70px;
   right: 50px;
   z-index: 998;
   transition: background-color 0.3s; }
