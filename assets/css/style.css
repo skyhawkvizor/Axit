@@ -669,14 +669,14 @@ html {
 
 .opinions__content .slick-dots button {
     width: 30px;
-    height: 15px;
+    height: 16px;
     border: none;
     border-radius: 20%;
     background-color: #cccccc;
     font-size: 0px;
-    transition: -webkit-filter 0.3s;
-    transition: filter 0.3s;
-    transition: filter 0.3s, -webkit-filter 0.3s;
+    transition: background 0.3s, -webkit-filter 0.3s;
+    transition: background 0.3s, filter 0.3s;
+    transition: background 0.3s, filter 0.3s, -webkit-filter 0.3s;
 }
 
 .opinions__content .slick-dots button:hover {
