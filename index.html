@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="assets/css/style.min.css">
 	
 	<!-- Useful meta tags -->
@@ -238,18 +239,20 @@
 						</div>
 						<form action="#" method="post" class="form">
 							<div class="form__inputs">
-								<label for="f-text" class="form__input">
+								<label for="f-text" class="form__field">
 									Name
-									<input id="f-text" type="text" placeholder="Name" class="input l req" data-error="???"
+									<input id="f-text" type="text" class="form__input input req" data-error="Fill in the field"
 										data-value="Name">
 								</label>
-								<label for="f-email" class="form__input">
+								<label for="f-email" class="form__field">
 									Email
-									<input id="f-email" type="email" placeholder="Email">
+									<input id="f-email" type="email" class="form__input input req" data-error="Fill in the field"
+										data-value="Email">
 								</label>
-								<label for="f-password" class="form__input">
+								<label for="f-password" class="form__field">
 									Password
-									<input id="f-password" type="password" placeholder="Password">
+									<input id="f-password" data-type='pass' class="form__input input req"
+										data-error="Fill in the field" data-value="Password">
 								</label>
 							</div>
 							<button type="submit" name="submit" class="form__submit hoverEffect">
@@ -366,128 +369,132 @@
 					</button>
 				</li>
 			</ul>
-			<div class="tab-section__body">
-				<div class="tab-section__slide">
-					<div class="tab-screen" id="tab_1">
-						<div class="tab-screen__content content-1">
-							<h2 class="tab-screen__title section-title section-title_align-center600">
-								Creative
-							</h2>
-							<p class="tab-screen__text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-								bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-								justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-								penatibus et magnis dis parturient montes.
-							</p>
-							<p class="tab-screen__text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-								bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-								justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-								penatibus et magnis dis parturient montes.
+			<div class="tab-section__slider tab-slider">
+				<div class="tab-slider__container swiper-container">
+					<div class="tab-slider__wrapper swiper-wrapper">
+						<div class="tab-slider__slide swiper-slide">
+							<div class="tab-screen">
+								<div class="tab-screen__content content-1">
+									<h2 class="tab-screen__title section-title section-title_align-center600">
+										Creative
+									</h2>
+									<p class="tab-screen__text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+										bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+										justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+										penatibus et magnis dis parturient montes.
+									</p>
+									<p class="tab-screen__text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+										bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+										justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+										penatibus et magnis dis parturient montes.
 		
-							</p>
-							<div class="tab-screen__buttons">
-								<button class="tab-screen__button hoverEffect">
-									<span class="tab-screen__button-text">
-										Download
-									</span>
-								</button>
+									</p>
+									<div class="tab-screen__buttons">
+										<button class="tab-screen__button hoverEffect">
+											<span class="tab-screen__button-text">
+												Download
+											</span>
+										</button>
+									</div>
+								</div>
+								<div class="tab-screen__image" data-da="content-1, 1, 600">
+									<picture class="tab-screen__pic">
+										<source class="lazyload"
+											srcset="data:image/gif;base64,R0lGODlhQAH9AIAAAP///wAAACH5BAEAAAEALAAAAABAAf0AAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8aNjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrry0AADs="
+											data-srcset="assets/images/tabs/creative.webp 1x, assets/images/tabs/creative@2x.webp 2x, assets/images/tabs/creative@3x.webp 3x, assets/images/tabs/creative@4x.webp 4x"
+											type="image/webp">
+										<img class="lazyload"
+											src="data:image/gif;base64,R0lGODlhQAH9AIAAAP///wAAACH5BAEAAAEALAAAAABAAf0AAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8aNjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrry0AADs="
+											data-src="assets/images/tabs/creative.png"
+											data-srcset="assets/images/tabs/creative@2x.png 2x, assets/images/tabs/creative@3x.png 3x, assets/images/tabs/creative@4x.png 4x"
+											width="320" height="253" alt="Creative">
+									</picture>
+								</div>
 							</div>
 						</div>
-						<div class="tab-screen__image" data-da="content-1, 1, 600">
-							<picture class="tab-screen__pic">
-								<source class="lazyload"
-									srcset="data:image/gif;base64,R0lGODlhQAH9AIAAAP///wAAACH5BAEAAAEALAAAAABAAf0AAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8aNjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrry0AADs="
-									data-srcset="assets/images/tabs/creative.webp 1x, assets/images/tabs/creative@2x.webp 2x, assets/images/tabs/creative@3x.webp 3x, assets/images/tabs/creative@4x.webp 4x"
-									type="image/webp">
-								<img class="lazyload"
-									src="data:image/gif;base64,R0lGODlhQAH9AIAAAP///wAAACH5BAEAAAEALAAAAABAAf0AAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8aNjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrry0AADs="
-									data-src="assets/images/tabs/creative.png"
-									data-srcset="assets/images/tabs/creative@2x.png 2x, assets/images/tabs/creative@3x.png 3x, assets/images/tabs/creative@4x.png 4x"
-									width="320" height="253" alt="Creative">
-							</picture>
+						<div class="tab-slider__slide swiper-slide">
+							<div class="tab-screen">
+								<div class="tab-screen__content content-2">
+									<h2 class="tab-screen__title section-title section-title_align-center600">
+										Colors
+									</h2>
+									<p class="tab-screen__text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+										bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+										justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+										penatibus et magnis dis parturient montes.
+									</p>
+									<p class="tab-screen__text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+										bibendum laoreet.
+									</p>
+									<div class="tab-screen__buttons">
+										<button class="tab-screen__button hoverEffect">
+											<span class="tab-screen__button-text">
+												Download
+											</span>
+										</button>
+									</div>
+								</div>
+								<div class="tab-screen__image" data-da="content-2, 1, 600">
+									<picture class="tab-screen__pic">
+										<source class="lazyload"
+											srcset="data:image/gif;base64,R0lGODlhQAH9AIAAAP///wAAACH5BAEAAAEALAAAAABAAf0AAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8aNjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrry0AADs="
+											data-srcset="assets/images/tabs/colors.webp 1x, assets/images/tabs/colors@2x.webp 2x, assets/images/tabs/colors@3x.webp 3x, assets/images/tabs/colors@4x.webp 4x"
+											type="image/webp">
+										<img class="lazyload"
+											src="data:image/gif;base64,R0lGODlhQAH9AIAAAP///wAAACH5BAEAAAEALAAAAABAAf0AAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8aNjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrry0AADs="
+											data-src="assets/images/tabs/colors.png"
+											data-srcset="assets/images/tabs/colors@2x.png 2x, assets/images/tabs/colors@3x.png 3x, assets/images/tabs/colors@4x.png 4x"
+											width="320" height="253" alt="colors">
+									</picture>
+								</div>
+							</div>
+						</div>
+						<div class="tab-slider__slide swiper-slide">
+							<div class="tab-screen">
+								<div class="tab-screen__content content-3">
+									<h2 class="tab-screen__title section-title section-title_align-center600">
+										Logos
+									</h2>
+									<p class="tab-screen__text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+										bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+										justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+										penatibus et magnis dis parturient montes.
+		
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+										bibendum laoreet.
+									</p>
+									<div class="tab-screen__buttons">
+										<button class="tab-screen__button hoverEffect">
+											<span class="tab-screen__button-text">
+												Download
+											</span>
+										</button>
+									</div>
+								</div>
+								<div class="tab-screen__image" data-da="content-3, 1, 600">
+									<picture class="tab-screen__pic">
+										<source class="lazyload"
+											srcset="data:image/gif;base64,R0lGODlhQAH9AIAAAP///wAAACH5BAEAAAEALAAAAABAAf0AAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8aNjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrry0AADs="
+											data-srcset="assets/images/tabs/logos.webp 1x, assets/images/tabs/logos@2x.webp 2x, assets/images/tabs/logos@3x.webp 3x, assets/images/tabs/logos@4x.webp 4x"
+											type="image/webp">
+										<img class="lazyload"
+											src="data:image/gif;base64,R0lGODlhQAH9AIAAAP///wAAACH5BAEAAAEALAAAAABAAf0AAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8aNjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrry0AADs="
+											data-src="assets/images/tabs/logos.png"
+											data-srcset="assets/images/tabs/logos@2x.png 2x, assets/images/tabs/logos@3x.png 3x, assets/images/tabs/logos@4x.png 4x"
+											width="320" height="253" alt="Logos">
+									</picture>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="tab-section__slide">
-					<div class="tab-screen" id="tab_2">
-						<div class="tab-screen__content content-2">
-							<h2 class="tab-screen__title section-title section-title_align-center600">
-								Colors
-							</h2>
-							<p class="tab-screen__text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-								bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-								justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-								penatibus et magnis dis parturient montes.
-							</p>
-							<p class="tab-screen__text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-								bibendum laoreet.
-							</p>
-							<div class="tab-screen__buttons">
-								<button class="tab-screen__button hoverEffect">
-									<span class="tab-screen__button-text">
-										Download
-									</span>
-								</button>
-							</div>
-						</div>
-						<div class="tab-screen__image" data-da="content-2, 1, 600">
-							<picture class="tab-screen__pic">
-								<source class="lazyload"
-									srcset="data:image/gif;base64,R0lGODlhQAH9AIAAAP///wAAACH5BAEAAAEALAAAAABAAf0AAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8aNjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrry0AADs="
-									data-srcset="assets/images/tabs/colors.webp 1x, assets/images/tabs/colors@2x.webp 2x, assets/images/tabs/colors@3x.webp 3x, assets/images/tabs/colors@4x.webp 4x"
-									type="image/webp">
-								<img class="lazyload"
-									src="data:image/gif;base64,R0lGODlhQAH9AIAAAP///wAAACH5BAEAAAEALAAAAABAAf0AAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8aNjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrry0AADs="
-									data-src="assets/images/tabs/colors.png"
-									data-srcset="assets/images/tabs/colors@2x.png 2x, assets/images/tabs/colors@3x.png 3x, assets/images/tabs/colors@4x.png 4x"
-									width="320" height="253" alt="colors">
-							</picture>
-						</div>
-					</div>
-				</div>
-				<div class="tab-section__slide">
-					<div class="tab-screen" id="tab_3">
-						<div class="tab-screen__content content-3">
-							<h2 class="tab-screen__title section-title section-title_align-center600">
-								Logos
-							</h2>
-							<p class="tab-screen__text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-								bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-								justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-								penatibus et magnis dis parturient montes.
-		
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-								bibendum laoreet.
-							</p>
-							<div class="tab-screen__buttons">
-								<button class="tab-screen__button hoverEffect">
-									<span class="tab-screen__button-text">
-										Download
-									</span>
-								</button>
-							</div>
-						</div>
-						<div class="tab-screen__image" data-da="content-3, 1, 600">
-							<picture class="tab-screen__pic">
-								<source class="lazyload"
-									srcset="data:image/gif;base64,R0lGODlhQAH9AIAAAP///wAAACH5BAEAAAEALAAAAABAAf0AAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8aNjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrry0AADs="
-									data-srcset="assets/images/tabs/logos.webp 1x, assets/images/tabs/logos@2x.webp 2x, assets/images/tabs/logos@3x.webp 3x, assets/images/tabs/logos@4x.webp 4x"
-									type="image/webp">
-								<img class="lazyload"
-									src="data:image/gif;base64,R0lGODlhQAH9AIAAAP///wAAACH5BAEAAAEALAAAAABAAf0AAAL+jI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsPExcbHyMnKy8zNzs/AwdLT1NXW19jZ2tvc3d7f0NHi4+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/v/w8woMCBBAsaPIgwocKFDBs6fAgxosSJFCtavIgxo8aNjRw7evwIMqTIkSRLmjyJMqXKlSxbunwJM6bMmTRr2ryJM6fOnTx7+vwJNKjQoUSLGj2KNKnSpUybOn0KNarUqVSrWr2KNavWrVy7ev0KNqzYsWTLmj2LNq3atWzbun0LN67cuXTr2r2LN6/evXz7+v0LOLDgwYQLGz6MOLHixYwbO34MObLkyZQrry0AADs="
-									data-src="assets/images/tabs/logos.png"
-									data-srcset="assets/images/tabs/logos@2x.png 2x, assets/images/tabs/logos@3x.png 3x, assets/images/tabs/logos@4x.png 4x"
-									width="320" height="253" alt="Logos">
-							</picture>
-						</div>
-					</div>
-				</div>
-		
 			</div>
+		
 		
 		
 		</section>		<section class="sublist-section ">
@@ -652,7 +659,94 @@
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 				</div>
 			</div>
-			<div class="pricing-section__cards pricing-cards">
+			<div class="pricing-section__slider pricing-slider">
+				<div class="pricing-slider__container swiper-container">
+					<ul class="pricing-slider__wrapper swiper-wrapper">
+						<li class="pricing-slider__slide pricing-slide swiper-slide">
+							<div class="pricing-slide__body">
+								<div class="pricing-slide__title">
+									Basic
+								</div>
+								<div class="pricing-slide__price">
+									<span class="pricing-slide__sub">$</span>0
+								</div>
+								<p class="pricing-slide__description">
+									Free for Life
+								</p>
+								<a href="#" class="pricing-slide__button hoverEffect"> Free </a>
+								<ul class="pricing-slide__terms">
+									<li class="pricing-slide__term">1 gb of space</li>
+									<li class="pricing-slide__term">10 gb of bandwidth</li>
+									<li class="pricing-slide__term">3 websites</li>
+									<li class="pricing-slide__term">Basic Customization</li>
+									<li class="pricing-slide__term">wordpress integration</li>
+									<li class="pricing-slide__term">email support</li>
+								</ul>
+							</div>
+						</li>
+						<li class="pricing-slider__slide pricing-slide swiper-slide">
+							<div class="pricing-slide__body">
+								<div class="pricing-slide__title">
+									Professional
+								</div>
+								<div class="pricing-slide__price">
+									<span class="pricing-slide__sub">$</span>19
+								</div>
+								<p class="pricing-slide__description">
+									Monthly Payment
+								</p>
+								<a href="#" class="pricing-slide__button hoverEffect active">
+									OUR MOST POPULAR
+								</a>
+								<ul class="pricing-slide__terms">
+									<li class="pricing-slide__term">5 gb of space</li>
+									<li class="pricing-slide__term">50 gb of bandwidth</li>
+									<li class="pricing-slide__term">12 websites</li>
+									<li class="pricing-slide__term">Advanced Customization</li>
+									<li class="pricing-slide__term">wordpress integration</li>
+									<li class="pricing-slide__term">email support</li>
+								</ul>
+							</div>
+						</li>
+						<li class="pricing-slider__slide pricing-slide swiper-slide">
+							<div class="pricing-slide__body">
+								<div class="pricing-slide__title">
+									Enterprise
+								</div>
+								<div class="pricing-slide__price">
+									<span class="pricing-slide__sub">$</span>70
+								</div>
+								<p class="pricing-slide__description">
+									Monthly Payment
+								</p>
+								<a href="#" class="pricing-slide__button hoverEffect">The Best
+								</a>
+								<ul class="pricing-slide__terms">
+									<li class="pricing-slide__term">Unlimited space</li>
+									<li class="pricing-slide__term">unlimited bandwidth</li>
+									<li class="pricing-slide__term">100 websites</li>
+									<li class="pricing-slide__term">Advanced Customization</li>
+									<li class="pricing-slide__term">wordpress integration</li>
+									<li class="pricing-slide__term">24/7 customer support</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="swiper-pagination"></div>
+				</div>
+				<button class="pricing-slider__button pricing-slider__button_prev swiper-button-prev">
+					<svg class="pricing-slider__button-icon pricing-slider__button-icon_prev">
+						<use xlink:href="assets/images/icons/arrow.svg#arrow"></use>
+					</svg>
+				</button>
+				<button class="pricing-slider__button pricing-slider__button_next swiper-button-next">
+					<svg class="pricing-slider__button-icon pricing-slider__button-icon_next">
+						<use xlink:href="assets/images/icons/arrow.svg#arrow"></use>
+					</svg>
+				</button>
+			</div>
+		
+			<!-- <div class="pricing-section__cards pricing-cards">
 				<div class="pricing-cards__content">
 					<div class="pricing-cards__card pricing-card">
 						<div class="pricing-card__title">
@@ -717,6 +811,27 @@
 							<li class="pricing-card__term">24/7 customer support</li>
 						</ul>
 					</div>
+					<div class="pricing-cards__card pricing-card">
+						<div class="pricing-card__title">
+							Enterprise
+						</div>
+						<div class="pricing-card__price">
+							<span class="pricing-card__sub">$</span>70
+						</div>
+						<p class="pricing-card__description">
+							Monthly Payment
+						</p>
+						<a href="#" class="pricing-card__button hoverEffect">The Best
+						</a>
+						<ul class="pricing-card__terms">
+							<li class="pricing-card__term">Unlimited space</li>
+							<li class="pricing-card__term">unlimited bandwidth</li>
+							<li class="pricing-card__term">100 websites</li>
+							<li class="pricing-card__term">Advanced Customization</li>
+							<li class="pricing-card__term">wordpress integration</li>
+							<li class="pricing-card__term">24/7 customer support</li>
+						</ul>
+					</div>
 				</div>
 				<button class="pricing-cards__button pricing-cards__button_prev hoverEffect">
 					<svg class="pricing-cards__button-icon pricing-cards__button-icon_prev">
@@ -728,7 +843,7 @@
 						<use xlink:href="assets/images/icons/arrow.svg#arrow"></use>
 					</svg>
 				</button>
-			</div>
+			</div> -->
 		</section>		<section class="saying-section padding container fuul-width">
 			<div class="saying-section__header section-header">
 				<h2 class="section-header__title underline underline_fz36">
@@ -739,7 +854,166 @@
 				</div>
 			</div>
 		
-			<div class="saying-section__opinions opinions">
+			<div class="saying-section__slider saying-slider">
+				<div class="saying-slider__container swiper-container">
+					<div class="saying-slider__wrapper swiper-wrapper">
+						<div class="saying-slider__slide swiper-slide">
+							<div class="opinion">
+								<p class="opinion__text">
+									Lorem ipsum dolor sit amet,
+									consectetur adipisicing elit. Doloribus
+									accusamus expedita repellat similique
+									odio aspernatur ex, architecto eaque
+									quo suscipit.
+								</p>
+								<div class="opinion__author author">
+									<div class="author__column-left">
+										<picture class="author__photo">
+											<source class="lazyload"
+												srcset="data:image/gif;base64,R0lGODlhRgBGAIAAAP///wAAACH5BAEAAAEALAAAAABGAEYAAAJMjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksrlWAAA7"
+												data-srcset="assets/images/saying/1.webp 1x, assets/images/saying/1@2x.webp 2x, assets/images/saying/1@3x.webp 3x, assets/images/saying/1@4x.webp 4x"
+												type="image/webp">
+											<img class="lazyload"
+												src="data:image/gif;base64,R0lGODlhRgBGAIAAAP///wAAACH5BAEAAAEALAAAAABGAEYAAAJMjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksrlWAAA7"
+												data-src="assets/images/saying/1.png"
+												data-srcset="assets/images/saying/1@2x.png 2x, assets/images/saying/1@3x.png 3x, assets/images/saying/1@4x.png 4x"
+												width="70" height="70" alt="author">
+										</picture>
+									</div>
+									<div class="author__column-right">
+										<div class="author__name">
+											Jeremy H.
+										</div>
+										<div class="author__duty">
+											Manager </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="saying-slider__slide swiper-slide">
+							<div class="opinion">
+								<p class="opinion__text">
+									Lorem ipsum dolor sit amet,
+									consectetur adipisicing elit. Doloribus
+									accusamus expedita repellat similique
+									odio aspernatur ex, architecto eaque
+									quo suscipit.
+								</p>
+								<div class="opinion__author author">
+									<div class="author__column-left">
+										<picture class="author__photo">
+											<source class="lazyload"
+												srcset="data:image/gif;base64,R0lGODlhRgBGAIAAAP///wAAACH5BAEAAAEALAAAAABGAEYAAAJMjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksrlWAAA7"
+												data-srcset="assets/images/saying/2.webp 1x, assets/images/saying/2@2x.webp 2x, assets/images/saying/2@3x.webp 3x, assets/images/saying/2@4x.webp 4x"
+												type="image/webp">
+											<img class="lazyload"
+												src="data:image/gif;base64,R0lGODlhRgBGAIAAAP///wAAACH5BAEAAAEALAAAAABGAEYAAAJMjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksrlWAAA7"
+												data-src="assets/images/saying/2.png"
+												data-srcset="assets/images/saying/2@2x.png 2x, assets/images/saying/2@3x.png 3x, assets/images/saying/2@4x.png 4x"
+												width="70" height="70" alt="author">
+										</picture>
+									</div>
+									<div class="author__column-right">
+										<div class="author__name">
+											John S.
+										</div>
+										<div class="author__duty">
+											Freelancer
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="saying-slider__slide swiper-slide">
+							<div class="opinion">
+								<p class="opinion__text">
+									Lorem ipsum dolor sit amet,
+									consectetur adipisicing elit. Doloribus
+									accusamus expedita repellat similique
+									odio aspernatur ex, architecto eaque
+									quo suscipit.
+									Lorem ipsum dolor sit amet,
+									consectetur adipisicing elit. Doloribus
+									accusamus expedita repellat similique
+									odio aspernatur ex, architecto eaque
+									quo suscipit.
+								</p>
+								<div class="opinion__author author">
+									<div class="author__column-left">
+										<picture class="author__photo">
+											<source class="lazyload"
+												srcset="data:image/gif;base64,R0lGODlhRgBGAIAAAP///wAAACH5BAEAAAEALAAAAABGAEYAAAJMjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksrlWAAA7"
+												data-srcset="assets/images/saying/3.webp 1x, assets/images/saying/3@2x.webp 2x, assets/images/saying/3@3x.webp 3x, assets/images/saying/3@4x.webp 4x"
+												type="image/webp">
+											<img class="lazyload"
+												src="data:image/gif;base64,R0lGODlhRgBGAIAAAP///wAAACH5BAEAAAEALAAAAABGAEYAAAJMjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksrlWAAA7"
+												data-src="assets/images/saying/3.png"
+												data-srcset="assets/images/saying/3@2x.png 2x, assets/images/saying/3@3x.png 3x, assets/images/saying/3@4x.png 4x"
+												width="70" height="70" alt="author">
+										</picture>
+									</div>
+									<div class="author__column-right">
+										<div class="author__name">
+											Susan W.
+										</div>
+										<div class="author__duty">
+											Photographer
+										</div>
+									</div>
+								</div>
+		
+							</div>
+						</div>
+						<div class="saying-slider__slide swiper-slide">
+							<div class="opinion">
+								<p class="opinion__text">
+									Lorem ipsum dolor sit amet,
+									consectetur adipisicing elit. Doloribus
+									accusamus expedita repellat similique
+									odio aspernatur ex, architecto eaque
+									quo suscipit.
+								</p>
+								<div class="opinion__author author">
+									<div class="author__column-left">
+										<picture class="author__photo">
+											<source class="lazyload"
+												srcset="data:image/gif;base64,R0lGODlhRgBGAIAAAP///wAAACH5BAEAAAEALAAAAABGAEYAAAJMjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksrlWAAA7"
+												data-srcset="assets/images/saying/4.webp 1x, assets/images/saying/4@2x.webp 2x, assets/images/saying/4@3x.webp 3x, assets/images/saying/4@4x.webp 4x"
+												type="image/webp">
+											<img class="lazyload"
+												src="data:image/gif;base64,R0lGODlhRgBGAIAAAP///wAAACH5BAEAAAEALAAAAABGAEYAAAJMjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksrlWAAA7"
+												data-src="assets/images/saying/4.png"
+												data-srcset="assets/images/saying/4@2x.png 2x, assets/images/saying/4@3x.png 3x, assets/images/saying/4@4x.png 4x"
+												width="70" height="70" alt="author">
+										</picture>
+									</div>
+									<div class="author__column-right">
+										<div class="author__name">
+											Jeremy H.
+										</div>
+										<div class="author__duty">
+											Manager
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<button class="saying-slider__button saying-slider__button_prev swiper-button-prev" title="prev">
+					<svg class="saying-slider__arrows-icon saying-slider__arrows-icon_prev">
+						<use xlink:href="assets/images/icons/arrow-circle.svg#arrow-circle"></use>
+					</svg>
+				</button>
+				<button class="saying-slider__button saying-slider__button_next swiper-button-next" title="next">
+					<svg class="saying-slider__arrows-icon saying-slider__arrows-icon_next">
+						<use xlink:href="assets/images/icons/arrow-circle.svg#arrow-circle"></use>
+					</svg>
+				</button>
+			</div>
+		
+			<!-- <div class="saying-section__opinions opinions">
 				<div class="opinions__content">
 					<div class="opinions__opinion opinion">
 						<p class="opinion__text">
@@ -887,7 +1161,7 @@
 					</svg>
 					1
 				</button>
-			</div>
+			</div> -->
 		</section>		<section class="design-section ">
 		
 			<picture class="design-section__bg rellax" data-rellax-speed="-5">
@@ -1013,21 +1287,25 @@
 					<div class="form-bottom__left-column">
 						<label for="fb-name" class="form-bottom__field form-bottom__field_name">
 							name
-							<input id="fb-name" type="text" name="Name" placeholder="Name" class="">
+							<input id="fb-name" type="text" name="Name" class="form-bottom__input input req" data-error="
+		Fill in the field" data-value="Name">
 						</label>
 						<label for="fb-email" class="form-bottom__field form-bottom__field_email">
 							email
-							<input id="fb-email" type="email" name="Email" placeholder="Email" class="">
+							<input id="fb-email" type="email" name="Email" class="form-bottom__input input req" data-error="
+		Fill in the field" data-value="Email">
 						</label>
 						<label for="fb-subject" class="form-bottom__field form-bottom__field_subject">
 							subject
-							<input id="fb-subject" type="text" name="Subject" placeholder="Subject" class="">
+							<input id="fb-subject" type="text" name="Subject" class="form-bottom__input input req" data-error="
+		Fill in the field" data-value="Subject">
 						</label>
 					</div>
 					<div class="form-bottom__right-column">
 						<label for="fb-message" class="form-bottom__field form-bottom__field_message">
 							message
-							<textarea id="fb-message" name="Message" placeholder="Message" class=""></textarea>
+							<textarea id="fb-message" name="Message" class="form-bottom__textarea input req" data-error="
+		Fill in the field" data-value="Message"></textarea>
 						</label>
 					</div>
 				</div>
@@ -1105,7 +1383,8 @@
 			<use xlink:href="assets/images/icons/up-arrow.svg#up-arrow"></use>
 		</svg>
 	</button>
-	<script defer src="assets/js/rellax.min.js"></script>
+	<!-- <script defer src="assets/js/rellax.min.js"></script> -->
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<script defer src="assets/js/app.js"></script>
 </body>
 
