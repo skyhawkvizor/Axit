@@ -1139,6 +1139,7 @@ html.scrollFixed {
     position: absolute;
     left: 0;
     top: 0;
+    will-change: auto;
 }
 
 .intro-section__bg img,
@@ -1481,57 +1482,50 @@ html.scrollFixed {
     padding: 3em 2em 5em 2em;
 }
 
-.form__input {
+.form__field {
     margin: 0px 0px 40px 0px;
     color: transparent;
+    position: relative;
 }
 
 @media (max-width: 600px) {
-    .form__input {
+    .form__field {
         margin: 0px 0px 36px 0px;
     }
 }
 
 @media (max-width: 600px) {
-    .form__input {
+    .form__field {
         margin: 0px 0px 27px 0px;
     }
 }
 
-.form__input:last-child {
+.form__field:last-child {
     margin: 0px 0px 0px 0px;
 }
 
-.form__input input {
+.form__field .form__error {
+    position: absolute;
+    font-size: 12px;
+    color: red;
+    bottom: -1.5em;
+}
+
+.form__field .err {
+    border-bottom: 1px solid red;
+}
+
+.form__input {
     padding: 0px 0px 0px 1.17em;
     height: 2.67em;
     border: none;
     border-bottom: 0.12em solid rgba(0, 0, 1, 0.16);
     font-size: 12px;
     transition: border 0.3s;
+    color: #333333;
 }
 
-.form__input input::-webkit-input-placeholder {
-    color: #bdbdbd;
-}
-
-.form__input input::-moz-placeholder {
-    color: #bdbdbd;
-}
-
-.form__input input:-ms-input-placeholder {
-    color: #bdbdbd;
-}
-
-.form__input input::-ms-input-placeholder {
-    color: #bdbdbd;
-}
-
-.form__input input::placeholder {
-    color: #bdbdbd;
-}
-
-.form__input input:focus {
+.form__input:focus {
     border-bottom: 1px solid #ff6d05;
 }
 
@@ -2310,7 +2304,7 @@ html.scrollFixed {
     width: calc(100% - 100px);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
     .pricing-slider__container {
         width: auto;
     }
@@ -2372,7 +2366,7 @@ html.scrollFixed {
     right: 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
     .pricing-slider__button {
         display: none;
     }
@@ -2871,7 +2865,9 @@ html.scrollFixed {
 
 .form-bottom__field {
     margin: 0px 0px 30px 0px;
+    padding: 0px 0px 0px 14px;
     color: transparent;
+    position: relative;
 }
 
 .form-bottom__field:last-child {
@@ -2884,8 +2880,22 @@ html.scrollFixed {
     }
 }
 
-.form-bottom__field input {
-    padding: 0px 0px 0px 1em;
+.form-bottom__field .form__error {
+    position: absolute;
+    font-size: 12px;
+    color: red;
+    bottom: -1.5em;
+}
+
+.form-bottom__field .err {
+    border-bottom: 1px solid red;
+}
+
+.form-bottom__field_message {
+    height: 100%;
+}
+
+.form-bottom__input {
     height: 2.25em;
     border: none;
     color: #bdbdbd;
@@ -2895,44 +2905,19 @@ html.scrollFixed {
 }
 
 @media (max-width: 600px) {
-    .form-bottom__field input {
+    .form-bottom__input {
         font-size: 12.6px;
     }
 }
 
-.form-bottom__field input::-webkit-input-placeholder {
-    color: #bdbdbd;
-}
-
-.form-bottom__field input::-moz-placeholder {
-    color: #bdbdbd;
-}
-
-.form-bottom__field input:-ms-input-placeholder {
-    color: #bdbdbd;
-}
-
-.form-bottom__field input::-ms-input-placeholder {
-    color: #bdbdbd;
-}
-
-.form-bottom__field input::placeholder {
-    color: #bdbdbd;
-}
-
-.form-bottom__field input:focus {
+.form-bottom__input:focus {
     border-bottom: 1px solid #ff6d05;
 }
 
-.form-bottom__field_message {
-    height: 100%;
-}
-
-.form-bottom__field_message textarea {
-    padding: 0.5em 0px 0px 1em;
+.form-bottom__textarea {
+    padding: 0.5em 0px 0px 0em;
     height: 100%;
     border: none;
-    border-bottom: 1px solid rgba(0, 0, 1, 0.16);
     border-bottom: 1px solid rgba(0, 0, 1, 0.16);
     resize: none;
     color: #bdbdbd;
@@ -2940,38 +2925,18 @@ html.scrollFixed {
     transition: border 0.3s;
 }
 
-.form-bottom__field_message textarea::-webkit-input-placeholder {
-    color: #bdbdbd;
-}
-
-.form-bottom__field_message textarea::-moz-placeholder {
-    color: #bdbdbd;
-}
-
-.form-bottom__field_message textarea:-ms-input-placeholder {
-    color: #bdbdbd;
-}
-
-.form-bottom__field_message textarea::-ms-input-placeholder {
-    color: #bdbdbd;
-}
-
-.form-bottom__field_message textarea::placeholder {
-    color: #bdbdbd;
-}
-
-.form-bottom__field_message textarea:focus {
+.form-bottom__textarea:focus {
     border-bottom: 1px solid #ff6d05;
 }
 
 @media (max-width: 700px) {
-    .form-bottom__field_message textarea {
+    .form-bottom__textarea {
         height: 15em;
     }
 }
 
 @media (max-width: 600px) {
-    .form-bottom__field_message textarea {
+    .form-bottom__textarea {
         font-size: 12.6px;
     }
 }
@@ -3009,6 +2974,14 @@ html.scrollFixed {
     height: 3em;
     line-height: 3;
     overflow: hidden;
+}
+
+.form-bottom .form__label {
+    font-size: 12px;
+    color: red;
+    position: absolute;
+    left: 14px;
+    bottom: -15px;
 }
 
 .footer {
