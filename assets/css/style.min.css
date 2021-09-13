@@ -920,7 +920,8 @@ html.scrollFixed {
     position: absolute;
     left: 0;
     top: 0;
-    will-change: auto; }
+    will-change: auto;
+    transition: transform 0.05s; }
     .intro-section__bg img,
     .intro-section__bg source {
       width: 100%;
