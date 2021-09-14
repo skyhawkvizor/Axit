@@ -921,7 +921,7 @@ html.scrollFixed {
     left: 0;
     top: 0;
     will-change: auto;
-    transition: transform 0.04s; }
+    transition: transform 0.05s; }
     .intro-section__bg img,
     .intro-section__bg source {
       width: 100%;
@@ -1930,7 +1930,7 @@ html.scrollFixed {
     position: absolute;
     top: 0;
     left: 0;
-    transition: transform 0.04s; }
+    transition: transform 0.05s; }
     .design-section__bg img,
     .design-section__bg source {
       width: 100%;
