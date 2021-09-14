@@ -912,7 +912,6 @@ html.scrollFixed {
 
 .intro-section {
   margin: 0px 0px -1px 0px;
-  background-color: black;
   position: relative;
   overflow: hidden; }
   .intro-section__bg {
@@ -921,7 +920,7 @@ html.scrollFixed {
     left: 0;
     top: 0;
     will-change: auto;
-    transition: transform 0.05s; }
+    transition: transform 0.03s; }
     .intro-section__bg img,
     .intro-section__bg source {
       width: 100%;
